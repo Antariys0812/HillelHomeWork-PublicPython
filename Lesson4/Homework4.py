@@ -70,7 +70,7 @@ print(adwentures_of_tom_sawer_sentences)
 """ Виведіть четверте речення з adwentures_of_tom_sawer_sentences.
 Перетворіть рядок у нижній регістр.
 """
-print(str(adwentures_of_tom_sawer_sentences[3::]).lower())
+print(str(adwentures_of_tom_sawer_sentences[3]).lower())
 
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
@@ -90,6 +90,6 @@ if kilkist_bythetime == 0:
 adwentures_of_tom_sawer_last_sentence = str(adwentures_of_tom_sawer_sentences[-1])
 print(adwentures_of_tom_sawer_last_sentence)
 #Перший спосіб
-print(adwentures_of_tom_sawer_last_sentence.count(' ') + 1)
+#print(adwentures_of_tom_sawer_last_sentence.count(' ') + 1) - не сподобалось лектору
 #Другий спосіб
 print(len(adwentures_of_tom_sawer_last_sentence.split()))
