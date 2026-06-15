@@ -5,7 +5,7 @@ class Romb:
 
     def __setattr__(self, key, value):
         if key=='kut_a':
-            self.kut_b = 180 - value
+            super().__setattr__('kut_b', 180 - value)
         if key =='kut_a' and (value >= 180 or value <= 0):
             raise AttributeError
         if 'kut_a' in self.__dict__:
